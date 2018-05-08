@@ -11,18 +11,18 @@
   
   
   
-  <meta name="description" content="admin简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 hexo-admin-qiniu。 Quick Start安装hexo-admin-qiniu插件并开始使用hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。 12$ npm install --save hexo-admin">
+  <meta name="description" content="admin简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 hexo-admin。 Quick Start安装hexo-admin插件并开始使用hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。 12$ npm install --save hexo-admin-qiniu$ hexo">
 <meta name="keywords" content="hexo,hexo-admin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-Admin">
 <meta property="og:url" content="http://rongchengfei.com/2018/05/04/Hello-From-Admin/index.html">
 <meta property="og:site_name" content="chengfeir&#39;s 极客小屋">
-<meta property="og:description" content="admin简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 hexo-admin-qiniu。 Quick Start安装hexo-admin-qiniu插件并开始使用hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。 12$ npm install --save hexo-admin">
+<meta property="og:description" content="admin简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 hexo-admin。 Quick Start安装hexo-admin插件并开始使用hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。 12$ npm install --save hexo-admin-qiniu$ hexo">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-05-04T11:18:29.983Z">
+<meta property="og:updated_time" content="2018-05-08T09:49:35.443Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Admin">
-<meta name="twitter:description" content="admin简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 hexo-admin-qiniu。 Quick Start安装hexo-admin-qiniu插件并开始使用hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。 12$ npm install --save hexo-admin">
+<meta name="twitter:description" content="admin简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 hexo-admin。 Quick Start安装hexo-admin插件并开始使用hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。 12$ npm install --save hexo-admin-qiniu$ hexo">
   
     <link rel="alternate" href="/atom.xml" title="chengfeir&#39;s 极客小屋" type="application/atom+xml">
   
@@ -195,12 +195,10 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="admin"><a href="#admin" class="headerlink" title="admin"></a>admin</h3><p>简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 <a href="https://xbotao.github.io/hexo-admin-qiniu/" target="_blank" rel="noopener">hexo-admin-qiniu</a>。</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="安装hexo-admin-qiniu插件并开始使用"><a href="#安装hexo-admin-qiniu插件并开始使用" class="headerlink" title="安装hexo-admin-qiniu插件并开始使用"></a>安装hexo-admin-qiniu插件并开始使用</h3><p>hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。</p>
+        <h3 id="admin"><a href="#admin" class="headerlink" title="admin"></a>admin</h3><p>简化hexo的编辑发布流程，可视化编辑让hexo用的更方便。为了简化图片的上传处理，使用了一个升级版插件 <a href="https://github.com/yfsoftcom/hexo-admin" target="_blank" rel="noopener">hexo-admin</a>。</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="安装hexo-admin插件并开始使用"><a href="#安装hexo-admin插件并开始使用" class="headerlink" title="安装hexo-admin插件并开始使用"></a>安装hexo-admin插件并开始使用</h3><p>hexo-admin 需要依赖hexo server 的服务，虽然主博客使用nginx，但是此插件暂不支持。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install --save hexo-admin-qiniu</span><br><span class="line">$ hexo server -p 8888 //指定端口开启</span><br></pre></td></tr></table></figure>
 <p>浏览地址为： <a href="http://localhost:8888/admin/" target="_blank" rel="noopener">http://localhost:8888/admin/</a></p>
-<h3 id="站点配置文件添加qiniu配置项"><a href="#站点配置文件添加qiniu配置项" class="headerlink" title="站点配置文件添加qiniu配置项"></a>站点配置文件添加qiniu配置项</h3><p>七牛云存储仓库，请务必使用 “华东区” 服务器 !!!<br>获取七牛AK、SK等参考使用技巧中相关文章</p>
-<p>_config.yml 需要添加如下配置<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">admin:</span><br><span class="line">  qiniuCfg:</span><br><span class="line">      imageslim: <span class="literal">true</span>  <span class="comment"># 启动图片瘦身，仅华东区bucket可以使用</span></span><br><span class="line">      AccessKey: <span class="string">'your qiniu AK'</span></span><br><span class="line">      SecretKey: <span class="string">'your qiniu SK'</span></span><br><span class="line">      BucketName: <span class="string">'your BK Name'</span></span><br><span class="line">      bucketHost: <span class="string">'you BK Host'</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="端口占用"><a href="#端口占用" class="headerlink" title="端口占用"></a>端口占用</h3><p>有时启动服务失败，需要查看端口的占用情况，避免端口冲突<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server -p 8888</span><br><span class="line">FATAL Port 8888 has been used. Try other port instead.</span><br><span class="line">FATAL Something<span class="string">'s wrong. Maybe you can find the solution here: http://hexo.io/docs/troubleshooting.html</span></span><br><span class="line"><span class="string">Error: listen EADDRINUSE 0.0.0.0:8888</span></span><br><span class="line"><span class="string">    at Object.exports._errnoException (util.js:1018:11)</span></span><br><span class="line"><span class="string">    at exports._exceptionWithHostPort (util.js:1041:20)</span></span><br><span class="line"><span class="string">    at Server._listen2 (net.js:1258:14)</span></span><br><span class="line"><span class="string">    at listen (net.js:1294:10)</span></span><br><span class="line"><span class="string">    at net.js:1404:9</span></span><br><span class="line"><span class="string">    at _combinedTickCallback (internal/process/next_tick.js:83:11)</span></span><br><span class="line"><span class="string">    at process._tickCallback (internal/process/next_tick.js:104:9)</span></span><br></pre></td></tr></table></figure></p>
 
       
@@ -253,20 +251,6 @@ var a = new Donate({
   </div>
   
     
-<nav id="article-nav">
-  
-    <a href="/2018/05/04/test-image/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          test-image
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
   
 </article>
 
@@ -276,7 +260,7 @@ var a = new Donate({
     <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#admin"><span class="nav-number">1.</span> <span class="nav-text">admin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number"></span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo-admin-qiniu插件并开始使用"><span class="nav-number">1.</span> <span class="nav-text">安装hexo-admin-qiniu插件并开始使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站点配置文件添加qiniu配置项"><span class="nav-number">2.</span> <span class="nav-text">站点配置文件添加qiniu配置项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端口占用"><span class="nav-number">3.</span> <span class="nav-text">端口占用</span></a></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#admin"><span class="nav-number">1.</span> <span class="nav-text">admin</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number"></span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo-admin插件并开始使用"><span class="nav-number">1.</span> <span class="nav-text">安装hexo-admin插件并开始使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#端口占用"><span class="nav-number">2.</span> <span class="nav-text">端口占用</span></a></li></ol>
     
     </div>
   </aside>
